@@ -1,0 +1,158 @@
+%html
+  %head{lang:"en"}
+    %meta{charset:"UTF-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %link{href:"css/foundation.css", rel:"stylesheet"}/
+    %link{href:"css/style.css", rel: "stylesheet"}/
+    %title Genius
+  %body
+    .wrapper
+      %header
+        .header-in
+          .header-in-1
+            .row.width
+              .large-4.medium-4.small-4.columns
+                %img{src:"img/logo.png"}
+              .large-4.medium-7.small-7.columns
+                .row
+                  .large-6.medium-6.small-6.columns
+                    .contact
+                      %h3 CALL:
+                      %p 1 300 316 882
+                  .large-6.medium-6.small-6.columns
+                    .contact
+                      %h3 EMAIL :
+                      %p info@criterionconferences.com
+              .large-4.medium-12.small-12.columns
+                %form
+                  .row
+                    .large-12.columns
+                      .row.collapse.top-right
+                        .small-9.columns
+                          %input{type:"text", placeholder:"SEARCH"}
+                        .small-1.columns
+                          %a.button.postfix.search-btn go
+                        .small-2.columns
+                          %a.sign-in{href:"#"} Sign In
+            .cb
+          .header-in-2
+            .row.width
+              .large-12.columns
+                %nav.top-bar.orange{"data-topbar" => "", :role => "navigation"}
+                  %ul.title-area
+                    %li.name
+                    %li.toggle-topbar.menu-icon
+                      %a{href:"#"}
+                        %span Menu
+                  %section.top-bar-section
+                    %ul.left
+                      %li
+                        %a{href:"#"} Home
+                      %li
+                        %a{href:"#"} Careers
+                      %li
+                        %a{href:"#"} Conferences
+                      %li
+                        %a{href:"#"} Sponsors
+                      %li
+                        %a{href:"#"} Partners
+                      %li
+                        %a{href:"#"} Contact Us
+                    %ul.right
+                      %li
+                        %a.in-logo.soc-logo{href:"#"}
+                      %li
+                        %a.fb-logo.soc-logo{href:"#"}
+                      %li
+                        %a.twit-logo.soc-logo{href:"#"}
+      .content
+        .content-in-1
+          .row.width.wr1
+            .large-5.columns
+              %h3.h3 Marketing in a consumer directed enviroment
+              %p.p Connecting Providers Directly to Their Clients
+            .large-5.columns
+              .date
+                %h3.h3 Sydney 24th& 25th September, 2013
+              %a.download{href:"#"} DOWNLOAD
+        .content-in-2
+          .width.wr1
+            %h2.h2 OUR PARTNERS
+            .wr2
+              .row
+                .large-2.medium-4.small-6.columns
+                  .round.company.company-1
+                .large-2.medium-4.small-6.columns
+                  .round.company.company-2
+                .large-2.medium-4.small-6.columns
+                  .round.company.company-3
+                .large-2.medium-4.small-6.columns
+                  .round.company.company-4
+                .large-2.medium-4.small-6.columns
+                  .round.company.company-5
+                .large-2.medium-4.small-6.columns
+                  .round.company.company-6
+        .content-in-3
+          .wr1.width.row
+            .large-4.columns
+              .row
+                .large-2.small-2.columns.ico.ico1
+                .large-10.small-10.columns
+                  %h4.h4 Welcome to criterion conference
+              .wr3
+                %p.p1 We're an independent research organisation who consistently design each conference to inspire, motivate and enrich the knowledge base of our delegates. We help our customers to access knowledge ideas in order to empower leadership and drive position change.
+                %p.p1 Based in Sydney, Criterion holds conferences across Australia and has grown to produce over 90+ conferences a year, attended by thousands of senior delegates from the private and public sector.
+            .large-4.columns
+              .row
+                .large-2.small-2.columns.ico.ico2
+                .large-10.small-10.columns
+                  %h4.h4 What we cover?
+              .wr3
+                %p.p1 Our events are a terrific way to super-charge your career growth - by sharing and learning with top leaders in key sectors, the task of benchmarking innovative ideas quickly is finally attainable.
+                %p.p1 Our delegates represent senior leadership in a variety of fields. Focus areas have included public service, tertiary education, health care, health and safety, service delivery policy and human resources.
+            .large-4.columns
+              .row
+                .large-2.small-2.columns.ico.ico3
+                .large-10.small-10.columns
+                  %h4.h4 Client testimonial
+              .wr3
+                %p.p1-1 “Interesting to hear the experiences, applications and learning of different models of alliances.”
+                %p.p2 Everill Barter, Roads and Maritime Services
+                %p.p1-1 “Interesting to hear the experiences, applications and learning of different models of alliances.”
+                %p.p2 John Carter, Roads and Maritime Services
+    %footer
+      .row.width1
+        .large-8.columns
+          %nav.top-bar{"data-topbar" => "", :role => "navigation"}
+            %ul.title-area
+              %li.name
+              %li.toggle-topbar.menu-icon
+                %a{href:"#"}
+                  %span Menu
+            %section.top-bar-section
+              %ul.left
+                %li
+                  %a{href:"#"} Home
+                %li
+                  %a{href:"#"} Careers
+                %li
+                  %a{href:"#"} Conferences
+                %li
+                  %a{href:"#"} Sponsors
+                %li
+                  %a{href:"#"} Partners
+                %li
+                  %a{href:"#"} Contact Us
+        .large-4.columns
+          %form
+            .row
+              .large-12.columns
+                .row.collapse.top-right
+                  .small-10.columns
+                    %input{type:"text", placeholder:"Your E-Mail"}
+                  .small-2.columns
+                    %a.button.postfix SEND
+    %script{src:"js/vendor/jquery.js"}
+    %script{src:"js/foundation.min.js"}
+    :javascript
+      $(document).foundation();
